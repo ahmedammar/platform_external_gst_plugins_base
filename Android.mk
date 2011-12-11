@@ -83,8 +83,7 @@ gst-plugins-base-configure:
 	IVORBIS_CFLAGS="-I$(TOP)/external/tremolo -DTREMOR" \
 	IVORBIS_LIBS="-lvorbisidec" \
 	$(abspath $(GST_PLUGINS_BASE_TOP))/$(CONFIGURE) --host=arm-linux-androideabi \
-	--prefix=/system --disable-orc --disable-gio --enable-ivorbis \
-	--disable-valgrind --disable-gtk-doc && \
+	--prefix=/system --disable-valgrind --disable-gtk-doc && \
 	for file in $(GST_PLUGINS_BASE_BUILT_SOURCES); do \
 		rm -f $$file && \
 		make -C $$(dirname $$file) $$(basename $$file) ; \
