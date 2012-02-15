@@ -40,7 +40,7 @@ include $(top_srcdir)/common/gst-glib-gen.mak
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstencodebin -:SHARED libgstencodebin \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstencodebin_la_SOURCES) \
 	 	   $(nodist_libgstencodebin_la_SOURCES) \

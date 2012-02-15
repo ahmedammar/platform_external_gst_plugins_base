@@ -56,7 +56,7 @@ endif
 
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer -:PROJECT libgstnetbuffer -:SHARED libgstnetbuffer-@GST_MAJORMINOR@ \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstnetbuffer_@GST_MAJORMINOR@_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstnetbuffer_@GST_MAJORMINOR@_la_CFLAGS) \

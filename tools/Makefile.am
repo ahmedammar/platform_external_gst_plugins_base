@@ -40,7 +40,7 @@ chmod: $(bin_SCRIPTS)
 Android.mk: Makefile.am
 	androgenizer -:PROJECT gst-discoverer \
 	 -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
-	 -:EXECUTABLE gst-discoverer -:TAGS eng debug \
+	 -:EXECUTABLE gst-discoverer -:TAGS user eng debug \
 	 -:SOURCES $(gst_discoverer_@GST_MAJORMINOR@_SOURCES) \
 	 -:CFLAGS $(DEFS) $(AM_CFLAGS) \
 	 -:LDFLAGS -lgstpbutils-@GST_MAJORMINOR@ -lgstvideo-@GST_MAJORMINOR@ \

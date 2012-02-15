@@ -43,7 +43,7 @@ EXTRA_DIST = gsttcp-marshal.list
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgsttcp -:SHARED libgsttcp \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgsttcp_la_SOURCES) \
 	 	   $(nodist_libgsttcp_la_SOURCES) \

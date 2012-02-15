@@ -25,7 +25,7 @@ noinst_HEADERS = \
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstffmpegcolorspace -:SHARED libgstffmpegcolorspace \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstffmpegcolorspace_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstffmpegcolorspace_la_CFLAGS) \

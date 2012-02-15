@@ -79,7 +79,7 @@ endif
 
 Android.mk: Makefile.am
 	androgenizer -:PROJECT libgstriff -:SHARED libgstriff-@GST_MAJORMINOR@ \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstriff_@GST_MAJORMINOR@_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstriff_@GST_MAJORMINOR@_la_CFLAGS) \

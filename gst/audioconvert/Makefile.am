@@ -38,7 +38,7 @@ noinst_HEADERS = \
 Android.mk: Makefile.am orc-update
 	androgenizer \
 	-:PROJECT libgstaudioconvert -:SHARED libgstaudioconvert \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstaudioconvert_la_SOURCES) \
 	 	   $(nodist_libgstaudioconvert_la_SOURCES) \
