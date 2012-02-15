@@ -24,7 +24,7 @@ generate_sine_table_LDADD = $(LIBM)
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstvideotestsrc -:SHARED libgstvideotestsrc \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstvideotestsrc_la_SOURCES) \
 	 	   $(nodist_libgstvideotestsrc_la_SOURCES) \

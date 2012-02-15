@@ -21,7 +21,7 @@ noinst_HEADERS = gstvolume.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstvolume -:SHARED libgstvolume \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstvolume_la_SOURCES) \
 	  $(nodist_libgstvolume_la_SOURCES) \

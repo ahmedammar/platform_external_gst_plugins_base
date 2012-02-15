@@ -74,7 +74,7 @@ include $(top_srcdir)/common/gst-glib-gen.mak
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstdecodebin -:SHARED libgstdecodebin \
-	 -:TAGS user user user eng debug \
+	 -:TAGS optional user user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstdecodebin_la_SOURCES) \
 	           $(nodist_libgstdecodebin_la_SOURCES) \
@@ -86,7 +86,7 @@ Android.mk: Makefile.am $(BUILT_SOURCES)
 		       LOCAL_MODULE_PATH:='$$(TARGET_OUT)/lib/gstreamer-0.10' \
 	 \
 	-:PROJECT libgstdecodebin2 -:SHARED libgstdecodebin2 \
-	 -:TAGS user user user eng debug \
+	 -:TAGS optional user user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstdecodebin2_la_SOURCES) \
 	           $(nodist_libgstdecodebin2_la_SOURCES) \
@@ -98,7 +98,7 @@ Android.mk: Makefile.am $(BUILT_SOURCES)
 		       LOCAL_MODULE_PATH:='$$(TARGET_OUT)/lib/gstreamer-0.10' \
 	 \
 	-:PROJECT libgstplaybin -:SHARED libgstplaybin \
-	 -:TAGS user user user eng debug \
+	 -:TAGS optional user user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstplaybin_la_SOURCES) \
 	           $(nodist_libgstplaybin_la_SOURCES) \

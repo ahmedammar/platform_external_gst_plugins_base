@@ -90,7 +90,7 @@ endif
 
 Android.mk: Makefile.am
 	androgenizer -:PROJECT libgstfft -:SHARED libgstfft-@GST_MAJORMINOR@ \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstfft_@GST_MAJORMINOR@_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(libgstfft_@GST_MAJORMINOR@_la_CFLAGS) \

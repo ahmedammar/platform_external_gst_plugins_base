@@ -29,7 +29,7 @@ noinst_HEADERS = \
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstvideoscale -:SHARED libgstvideoscale \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstvideoscale_la_SOURCES) \
 	 	   $(nodist_libgstvideoscale_la_SOURCES) \

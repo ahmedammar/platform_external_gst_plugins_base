@@ -122,7 +122,7 @@ endif
 
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer -:PROJECT libgstinterfaces -:SHARED libgstinterfaces-@GST_MAJORMINOR@ \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstinterfaces_@GST_MAJORMINOR@_la_SOURCES) \
 	           $(nodist_libgstinterfaces_@GST_MAJORMINOR@_la_SOURCES) \

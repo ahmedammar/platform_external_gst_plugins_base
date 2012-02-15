@@ -11,7 +11,7 @@ noinst_HEADERS = gstaudiotestsrc.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstaudiotestsrc -:SHARED libgstaudiotestsrc \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstaudiotestsrc_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstaudiotestsrc_la_CFLAGS) \
